@@ -1,0 +1,86 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("373fa624-5915-4ab7-942e-2f7a8f4fadd7",
+	'Game',
+	8,
+	'Game',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_TFR
+	VALUES ("54f8349f-6c45-4d34-9426-a3ba30dd230e",
+	"373fa624-5915-4ab7-942e-2f7a8f4fadd7",
+	'assessInsufficentMaterial',
+	'',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	3,
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	1);
+INSERT INTO O_NBATTR
+	VALUES ("eb3681c7-05f4-4245-8425-6f730be75022",
+	"373fa624-5915-4ab7-942e-2f7a8f4fadd7");
+INSERT INTO O_BATTR
+	VALUES ("eb3681c7-05f4-4245-8425-6f730be75022",
+	"373fa624-5915-4ab7-942e-2f7a8f4fadd7");
+INSERT INTO O_ATTR
+	VALUES ("eb3681c7-05f4-4245-8425-6f730be75022",
+	"373fa624-5915-4ab7-942e-2f7a8f4fadd7",
+	"00000000-0000-0000-0000-000000000000",
+	'gameId',
+	'',
+	'',
+	'gameId',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("c1ebe793-ce9f-4ab0-a760-a48f5141ad28",
+	"373fa624-5915-4ab7-942e-2f7a8f4fadd7");
+INSERT INTO O_BATTR
+	VALUES ("c1ebe793-ce9f-4ab0-a760-a48f5141ad28",
+	"373fa624-5915-4ab7-942e-2f7a8f4fadd7");
+INSERT INTO O_ATTR
+	VALUES ("c1ebe793-ce9f-4ab0-a760-a48f5141ad28",
+	"373fa624-5915-4ab7-942e-2f7a8f4fadd7",
+	"eb3681c7-05f4-4245-8425-6f730be75022",
+	'insufficientMaterial',
+	'',
+	'',
+	'insufficientMaterial',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"373fa624-5915-4ab7-942e-2f7a8f4fadd7");
+INSERT INTO O_OIDA
+	VALUES ("eb3681c7-05f4-4245-8425-6f730be75022",
+	"373fa624-5915-4ab7-942e-2f7a8f4fadd7",
+	0,
+	'gameId');
+INSERT INTO O_ID
+	VALUES (1,
+	"373fa624-5915-4ab7-942e-2f7a8f4fadd7");
+INSERT INTO O_ID
+	VALUES (2,
+	"373fa624-5915-4ab7-942e-2f7a8f4fadd7");
+INSERT INTO PE_PE
+	VALUES ("373fa624-5915-4ab7-942e-2f7a8f4fadd7",
+	1,
+	"34fc29f8-82ac-4d7a-856e-294d539ae51c",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("34fc29f8-82ac-4d7a-856e-294d539ae51c",
+	"a1757e34-c829-4ae5-aa19-c1661c1f0cf9",
+	"a1757e34-c829-4ae5-aa19-c1661c1f0cf9",
+	'Chess Starter',
+	'',
+	0,
+	'../Chess Starter.xtuml');

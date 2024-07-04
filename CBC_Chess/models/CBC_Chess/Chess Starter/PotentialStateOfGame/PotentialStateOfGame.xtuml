@@ -1,0 +1,342 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	'PotentialStateOfGame',
+	9,
+	'PotentialStateOfGame',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_REF
+	VALUES ("e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"e2d107b0-26de-4412-bb10-34a785a35da0",
+	0,
+	"3e58b9b7-9ee4-4b9c-ad96-12e2a90881ec",
+	"14ad688b-6adf-4184-b279-02d167c61706",
+	"88b59242-3a39-4b77-8bfc-44e481d3b9d1",
+	"db23bbff-d4c3-4a86-b8e1-857a0b31c19b",
+	"733090ac-a4cd-4dc9-8867-6c265d4aed67",
+	"53b949fb-b741-4564-862c-6c1007d76c68",
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'PossibleMove',
+	'turnId',
+	'R8.''is_achieved_by''');
+INSERT INTO R_RGO_PROXY
+	VALUES ("e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"14ad688b-6adf-4184-b279-02d167c61706",
+	"88b59242-3a39-4b77-8bfc-44e481d3b9d1",
+	'../Chess Starter.xtuml');
+INSERT INTO O_RTIDA_PROXY
+	VALUES ("3e58b9b7-9ee4-4b9c-ad96-12e2a90881ec",
+	"e2d107b0-26de-4412-bb10-34a785a35da0",
+	0,
+	"14ad688b-6adf-4184-b279-02d167c61706",
+	"db23bbff-d4c3-4a86-b8e1-857a0b31c19b",
+	'../Chess Starter.xtuml');
+INSERT INTO O_RATTR
+	VALUES ("733090ac-a4cd-4dc9-8867-6c265d4aed67",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"3e58b9b7-9ee4-4b9c-ad96-12e2a90881ec",
+	"e2d107b0-26de-4412-bb10-34a785a35da0",
+	1,
+	'turnId');
+INSERT INTO O_BATTR_PROXY
+	VALUES ("3e58b9b7-9ee4-4b9c-ad96-12e2a90881ec",
+	"e2d107b0-26de-4412-bb10-34a785a35da0",
+	'../PossibleMove/PossibleMove.xtuml');
+INSERT INTO O_ATTR
+	VALUES ("733090ac-a4cd-4dc9-8867-6c265d4aed67",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"4cb1db74-ac22-4ade-9365-918e2e29272e",
+	'turnId',
+	'',
+	'',
+	'turnId',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000007",
+	'',
+	'');
+INSERT INTO O_REF
+	VALUES ("e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"e2d107b0-26de-4412-bb10-34a785a35da0",
+	0,
+	"6c70d3c7-4417-44bf-9183-a5dbcc9a63fd",
+	"14ad688b-6adf-4184-b279-02d167c61706",
+	"88b59242-3a39-4b77-8bfc-44e481d3b9d1",
+	"db23bbff-d4c3-4a86-b8e1-857a0b31c19b",
+	"e3b0c186-f5be-44ff-a777-0592ce5a59ce",
+	"0675e7b0-211b-4d8c-be8d-560c7c01035e",
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'PossibleMove',
+	'possibilityNumber',
+	'R8.''is_achieved_by''');
+INSERT INTO O_RTIDA_PROXY
+	VALUES ("6c70d3c7-4417-44bf-9183-a5dbcc9a63fd",
+	"e2d107b0-26de-4412-bb10-34a785a35da0",
+	0,
+	"14ad688b-6adf-4184-b279-02d167c61706",
+	"db23bbff-d4c3-4a86-b8e1-857a0b31c19b",
+	'../Chess Starter.xtuml');
+INSERT INTO O_RATTR
+	VALUES ("e3b0c186-f5be-44ff-a777-0592ce5a59ce",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"6c70d3c7-4417-44bf-9183-a5dbcc9a63fd",
+	"e2d107b0-26de-4412-bb10-34a785a35da0",
+	1,
+	'possibilityNumber');
+INSERT INTO O_BATTR_PROXY
+	VALUES ("6c70d3c7-4417-44bf-9183-a5dbcc9a63fd",
+	"e2d107b0-26de-4412-bb10-34a785a35da0",
+	'../PossibleMove/PossibleMove.xtuml');
+INSERT INTO O_ATTR
+	VALUES ("e3b0c186-f5be-44ff-a777-0592ce5a59ce",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"733090ac-a4cd-4dc9-8867-6c265d4aed67",
+	'possibilityNumber',
+	'',
+	'',
+	'possibilityNumber',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000007",
+	'',
+	'');
+INSERT INTO O_REF
+	VALUES ("e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	0,
+	"733090ac-a4cd-4dc9-8867-6c265d4aed67",
+	"4e89493f-2022-4767-9442-135a5ab0d0d2",
+	"88a4e858-71bf-4569-b28b-d50d104a758d",
+	"6d30acd5-6fcf-467c-b27a-72850780a014",
+	"2683011d-264a-431f-80d9-9f419cda15f2",
+	"5c6c85c7-623f-4224-ab73-1a82aab2b28d",
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'PotentialStateOfGame',
+	'turnId',
+	'R9.''precedes''');
+INSERT INTO R_RGO_PROXY
+	VALUES ("e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"4e89493f-2022-4767-9442-135a5ab0d0d2",
+	"88a4e858-71bf-4569-b28b-d50d104a758d",
+	'../Chess Starter.xtuml');
+INSERT INTO O_RTIDA_PROXY
+	VALUES ("733090ac-a4cd-4dc9-8867-6c265d4aed67",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	0,
+	"4e89493f-2022-4767-9442-135a5ab0d0d2",
+	"6d30acd5-6fcf-467c-b27a-72850780a014",
+	'../Chess Starter.xtuml');
+INSERT INTO O_RATTR
+	VALUES ("2683011d-264a-431f-80d9-9f419cda15f2",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"3e58b9b7-9ee4-4b9c-ad96-12e2a90881ec",
+	"e2d107b0-26de-4412-bb10-34a785a35da0",
+	1,
+	'turnId');
+INSERT INTO O_ATTR
+	VALUES ("2683011d-264a-431f-80d9-9f419cda15f2",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"e3b0c186-f5be-44ff-a777-0592ce5a59ce",
+	'previousturnId',
+	'',
+	'previous',
+	'turnId',
+	1,
+	"ba5eda7a-def5-0000-0000-000000000007",
+	'',
+	'');
+INSERT INTO O_REF
+	VALUES ("e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	0,
+	"e3b0c186-f5be-44ff-a777-0592ce5a59ce",
+	"4e89493f-2022-4767-9442-135a5ab0d0d2",
+	"88a4e858-71bf-4569-b28b-d50d104a758d",
+	"6d30acd5-6fcf-467c-b27a-72850780a014",
+	"189bd887-709a-4ad2-922a-d111acae5095",
+	"fcf59a01-a63f-4541-9e0f-90444f7488ab",
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'PotentialStateOfGame',
+	'possibilityNumber',
+	'R9.''precedes''');
+INSERT INTO O_RTIDA_PROXY
+	VALUES ("e3b0c186-f5be-44ff-a777-0592ce5a59ce",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	0,
+	"4e89493f-2022-4767-9442-135a5ab0d0d2",
+	"6d30acd5-6fcf-467c-b27a-72850780a014",
+	'../Chess Starter.xtuml');
+INSERT INTO O_RATTR
+	VALUES ("189bd887-709a-4ad2-922a-d111acae5095",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"6c70d3c7-4417-44bf-9183-a5dbcc9a63fd",
+	"e2d107b0-26de-4412-bb10-34a785a35da0",
+	1,
+	'possibilityNumber');
+INSERT INTO O_ATTR
+	VALUES ("189bd887-709a-4ad2-922a-d111acae5095",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"2683011d-264a-431f-80d9-9f419cda15f2",
+	'previouspossibilityNumber',
+	'',
+	'previous',
+	'possibilityNumber',
+	1,
+	"ba5eda7a-def5-0000-0000-000000000007",
+	'',
+	'');
+INSERT INTO O_REF
+	VALUES ("e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"373fa624-5915-4ab7-942e-2f7a8f4fadd7",
+	0,
+	"eb3681c7-05f4-4245-8425-6f730be75022",
+	"b3b8ca41-6d02-4499-81a8-0222c0bb814f",
+	"cc9f0ee8-2a51-4aca-96b5-4b78b8313993",
+	"885a9b9b-bbd0-4300-882a-14abab21d649",
+	"4cb1db74-ac22-4ade-9365-918e2e29272e",
+	"955938ee-9bb9-4f48-9e38-49cec00b7fe5",
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'Game',
+	'gameId',
+	'R7.''based_on_current_status_of''');
+INSERT INTO R_RGO_PROXY
+	VALUES ("e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"b3b8ca41-6d02-4499-81a8-0222c0bb814f",
+	"cc9f0ee8-2a51-4aca-96b5-4b78b8313993",
+	'../Chess Starter.xtuml');
+INSERT INTO O_RTIDA_PROXY
+	VALUES ("eb3681c7-05f4-4245-8425-6f730be75022",
+	"373fa624-5915-4ab7-942e-2f7a8f4fadd7",
+	0,
+	"b3b8ca41-6d02-4499-81a8-0222c0bb814f",
+	"885a9b9b-bbd0-4300-882a-14abab21d649",
+	'../Chess Starter.xtuml');
+INSERT INTO O_RATTR
+	VALUES ("4cb1db74-ac22-4ade-9365-918e2e29272e",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"eb3681c7-05f4-4245-8425-6f730be75022",
+	"373fa624-5915-4ab7-942e-2f7a8f4fadd7",
+	1,
+	'gameId');
+INSERT INTO O_BATTR_PROXY
+	VALUES ("eb3681c7-05f4-4245-8425-6f730be75022",
+	"373fa624-5915-4ab7-942e-2f7a8f4fadd7",
+	'../Game/Game.xtuml');
+INSERT INTO O_ATTR
+	VALUES ("4cb1db74-ac22-4ade-9365-918e2e29272e",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"00000000-0000-0000-0000-000000000000",
+	'gameId',
+	'
+
+
+
+',
+	'',
+	'gameId',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000007",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("3532e78a-cab5-4a95-ad88-7e32f22909e7",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb");
+INSERT INTO O_BATTR
+	VALUES ("3532e78a-cab5-4a95-ad88-7e32f22909e7",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb");
+INSERT INTO O_ATTR
+	VALUES ("3532e78a-cab5-4a95-ad88-7e32f22909e7",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"189bd887-709a-4ad2-922a-d111acae5095",
+	'whiteCentipawnValue',
+	'',
+	'',
+	'whiteCentipawnValue',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("51993227-6666-485c-b269-0ef3b2f40f2c",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb");
+INSERT INTO O_BATTR
+	VALUES ("51993227-6666-485c-b269-0ef3b2f40f2c",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb");
+INSERT INTO O_ATTR
+	VALUES ("51993227-6666-485c-b269-0ef3b2f40f2c",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"3532e78a-cab5-4a95-ad88-7e32f22909e7",
+	'blackCentipawnValue',
+	'',
+	'',
+	'blackCentipawnValue',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'',
+	'');
+INSERT INTO O_NBATTR
+	VALUES ("6f1b517e-4902-414b-ab48-bad1f4700c02",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb");
+INSERT INTO O_BATTR
+	VALUES ("6f1b517e-4902-414b-ab48-bad1f4700c02",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb");
+INSERT INTO O_ATTR
+	VALUES ("6f1b517e-4902-414b-ab48-bad1f4700c02",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	"51993227-6666-485c-b269-0ef3b2f40f2c",
+	'centipawnAdvantage',
+	'',
+	'',
+	'centipawnAdvantage',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000003",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb");
+INSERT INTO O_OIDA
+	VALUES ("733090ac-a4cd-4dc9-8867-6c265d4aed67",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	0,
+	'turnId');
+INSERT INTO O_OIDA
+	VALUES ("e3b0c186-f5be-44ff-a777-0592ce5a59ce",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	0,
+	'possibilityNumber');
+INSERT INTO O_OIDA
+	VALUES ("4cb1db74-ac22-4ade-9365-918e2e29272e",
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	0,
+	'gameId');
+INSERT INTO O_ID
+	VALUES (1,
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb");
+INSERT INTO O_ID
+	VALUES (2,
+	"e406d606-fba8-46b3-a11f-9ff11a2716fb");
+INSERT INTO PE_PE
+	VALUES ("e406d606-fba8-46b3-a11f-9ff11a2716fb",
+	1,
+	"34fc29f8-82ac-4d7a-856e-294d539ae51c",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("34fc29f8-82ac-4d7a-856e-294d539ae51c",
+	"a1757e34-c829-4ae5-aa19-c1661c1f0cf9",
+	"a1757e34-c829-4ae5-aa19-c1661c1f0cf9",
+	'Chess Starter',
+	'',
+	0,
+	'../Chess Starter.xtuml');
