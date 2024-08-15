@@ -10,6 +10,9 @@ Verifier.
 To watch a video walkthrough of the basic setup, click on the video link at the
 [bottom of this page](#basic-setup-walkthrough)
 
+Read the announcement of the [2024 Chess Modeling Challenge](doc/announcement.md).
+The results of this challenge will be highlighted at
+[Shlaer-Mellor Day 2024](https://xtuml.github.io/xday/smdays2024.html)
 
 ## Prerequisites
 
@@ -126,6 +129,77 @@ mvn dependency:get -DgroupId=io.ciera -DartifactId=runtime -Dversion=2.7.2
    "Java Application" heading.
 
 6. Click "Run" to launch the application.
+
+### With MC-3020 C
+
+1. Clone this git repository:  [ChessLib Implemented in ANSI C - thearst3rd](https://github.com/thearst3rd/chesslib),
+   which is a C implementation of 'ChessLib' used to supply legal moves.
+   It is important that you clone this repo as a peer to your chess repo
+   (having the same parent directory in the filesystem).  The makefile
+   will assume that `chesslib` is "right next to" `chess`.
+
+2. Follow the instructions to build the `chesslib` library (basically running `make`).
+
+3. In BridgePoint, in the 'xtUML Modeling' perspective, select the 'lichess_bot'
+   project and 'Build Project'.  This will generate C code from your bot model.
+
+4. From a command line, navigate to `chess/lichess_bot/src`.
+
+5. Run `make` to compile your generated C code and link in the chesslib library.
+
+6. From a command line, navigate to `chess/lichess_api`.
+
+7. Create folders `incoming` and `outgoing`.  This is for file-based communication
+   between the Lichess API Standalone application and the running C program.
+
+8. Copy the "lichess_bot.properties" file from
+   `chess/lichess_bot/src/main/resources/` to the `chess/lichess_api/`
+   directory.
+
+9. In the same folder (`lichess_api`), run the C program by executing
+   `../lichess_bot/bin/cbot3020`.
+
+10. From BridgePoint, from the Java perspective, in the Package Explorer,
+    navigate to `src/main/java/lichess`.
+
+11. Right-click on LichessAPIStandalone.java and run as Java Application.
+
+12. You can now challenge your bot as with Verifier and Ciera.
+
+
+### Bot versus Bot
+
+The chess model normally awaits a challenge.  But the chess model is happy
+to challenge a human or another bot.  Following are steps to cause your
+running chess model to challenge another lichess person/bot.
+
+1. If running with Ciera, add an invocation to 'send_challenge' at the end
+   of the 'chess::connected' port message handler.
+2. Replace the username in 'send_challenge' with the user you want to
+   challenge. At the moment, it is 'maia1', but it can be a human user or
+   another bot.  Keep in mind that not all bots accept all challenges
+   depending on the properties of the challenge (time control, rated/unrated,
+   bot/human, etc).
+3. Build (if running in ciera) and launch the application.
+4. If running in Verifier, navigate in the session explorer to the
+   'send_challenge' function and execute it.
+5. If you watch the console output, you will see a message that gives a
+   URL to watch.  You can paste that into a browser, and it will take you to
+   the in-progress game.  This is automatic when running in Verifier.
+6. Another way to watch is to go to
+
+   ```
+   https://lichess.org/@/<your-bot-username>/tv
+   ```
+
+   If you have an in-progress
+   game, it will show up there, or if you navigate to this URL beforehand, it
+   will automatically show the game when your bot starts playing.
+
+For development, it is convenient to have two bot accounts in addition to
+your human account, so that you can run your bot (in one account) against
+the teacher (random move) bot (in another account).  Or, you can run your
+bot model against other bot models.
 
 
 ## Adding bot intelligence
