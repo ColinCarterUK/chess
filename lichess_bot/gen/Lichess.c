@@ -41,11 +41,11 @@ Lichess_API_acceptChallenge( c_t p_challenge_id[ESCHER_SYS_MAX_STRING_LEN] )
   FILE * f = fopen( "incoming/acceptChallenge.json", "w" );
 
   if ( f ) {
-    fprintf (stderr, "%s%s%s\n", front, p_challenge_id, back);
+    debug_fprintf (stderr, "%s%s%s\n", front, p_challenge_id, back);
     fprintf (f, "%s%s%s\n", front, p_challenge_id, back);
     fclose (f);
   } else {
-    fprintf (stderr, "error opening incoming/acceptChallenge.json\n");
+    debug_fprintf (stderr, "error opening incoming/acceptChallenge.json\n");
   }
 
   return true;
@@ -56,13 +56,11 @@ Lichess_API_acceptChallenge( c_t p_challenge_id[ESCHER_SYS_MAX_STRING_LEN] )
  * Provided Port:  API
  * To Provider Message:  account
  */
+lichess_bot_sdt_User _bot_user;
 lichess_bot_sdt_User
 Lichess_API_account()
 {
-  lichess_bot_sdt_User r;
-  Escher_strcpy( r.id, "cortlandstarrett_bot" );
-  Escher_strcpy( r.username, "cortlandstarrett_bot" );
-  return r;
+  return _bot_user;
 }
 
 /*
@@ -149,6 +147,24 @@ Lichess_API_connected()
 bool
 Lichess_API_createChallenge( const i_t p_clock_increment, const i_t p_clock_limit, const lichess_bot_Color_t p_color, c_t p_fen[ESCHER_SYS_MAX_STRING_LEN], const bool p_rated, c_t p_user[ESCHER_SYS_MAX_STRING_LEN], const lichess_bot_Variant_t p_variant )
 {
+  /* Note that only the user, fen and clock values are used.  The rest is hard-coded.  */
+  char * s = "{\"name\":\"createChallenge\",\"args\":{\
+  \"user\":\"%s\",\
+  \"clock_limit\":%d,\
+  \"clock_increment\":%d,\
+  \"rated\":false,\
+  \"color\":\"RANDOM\",\
+  \"fen\":\"%s\",\
+  \"variant\":{\"key\":\"standard\"}}}\n";
+
+  FILE * f = fopen( "incoming/createChallenge.json", "w" );
+  if ( f ) {
+    debug_fprintf (stderr, s, p_user, p_clock_limit, p_clock_increment, p_fen);
+    fprintf (f, s, p_user, p_clock_limit, p_clock_increment, p_fen);
+    fclose (f);
+  } else {
+    debug_fprintf (stderr, "error opening incoming/createChallenge.json\n");
+  }
   return true;
 }
 
@@ -243,11 +259,11 @@ Lichess_API_move( c_t p_game_id[ESCHER_SYS_MAX_STRING_LEN], c_t p_move[ESCHER_SY
   FILE * f = fopen( "incoming/move.json", "w" );
 
   if ( f ) {
-    fprintf (stderr, "%s%s%s%s%s\n", front, p_game_id, middle, p_move, back);
+    debug_fprintf (stderr, "%s%s%s%s%s\n", front, p_game_id, middle, p_move, back);
     fprintf (f, "%s%s%s%s%s\n", front, p_game_id, middle, p_move, back);
     fclose (f);
   } else {
-    fprintf (stderr, "error opening incoming/move.json\n");
+    debug_fprintf (stderr, "error opening incoming/move.json\n");
   }
   return true;
 }
